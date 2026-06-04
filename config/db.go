@@ -14,11 +14,11 @@ func SetupDB() *sql.DB {
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
-	dbHost := os.Getenv("DB_HOST")
-	dbPort := os.Getenv("DB_PORT")
-	dbUser := os.Getenv("DB_USERNAME")
-	dbHPassword := os.Getenv("DB_PASSWORD")
-	dbName := os.Getenv("DB_DATABASE")
+	_ = os.Getenv("DB_HOST")
+	_ = os.Getenv("DB_PORT")
+	_ = os.Getenv("DB_USERNAME")
+	_ = os.Getenv("DB_PASSWORD")
+	_ = os.Getenv("DB_DATABASE")
 
-	connectionStr := fmt.Sprint("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable")
+	_ = fmt.Sprint("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable")
 }
