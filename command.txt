@@ -1,0 +1,2 @@
+go get -u github.com/gorilla/mux github.com/lib/pq github.com/joho/godotenv
+- instala pacotes
